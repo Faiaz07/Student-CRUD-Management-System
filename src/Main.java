@@ -25,6 +25,28 @@ public class Main {
                 case 2:
                     system.readStudent();
                     break;
+
+                case 3:
+                    System.out.println("Enter the Student ID to update : ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+
+                    system.updateStudent(id);
+                    break;
+
+                case 4:
+                    System.out.println("Enter the Student ID to delete :");
+                    id = sc.nextInt();
+
+                    system.deleteStudent(id);
+                    break;
+
+                case 5:
+                    System.out.println("Exiting...");
+                    return;
+
+                default:
+                    System.out.println("Invalid option. Please try again");
             }
         }
 
